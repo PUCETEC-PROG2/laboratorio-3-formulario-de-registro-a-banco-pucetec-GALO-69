@@ -8,7 +8,53 @@
 <body>
     <h1>Laboratorio 3 - PUCE Banco</h1>
     <p>Bienvenido al laboratorio 3 del curso de Desarrollo de Aplicaciones Web. En este laboratorio, implementaremos una aplicación web para un banco ficticio llamado PUCE Banco.</p>
-    <h2>Nombre del estudiante: [Tu Nombre Aquí]</h2>
+    <h2>Nombre del estudiante: Galo Alejandro Orellana Astudillo</h2>
     <!-- Aquí irá el formulario -->
+     <form action="#" method="post">
+        <div>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required placeholder="Nombre del cliente "><br><br>
+        </div>
+        <div>
+            <label for="apellidoPaterno">Apellido Paterno:</label>
+            <input type="text" id="apellidoPaterno" name="apellidoPaterno" required placeholder="Apellido Paterno del cliente"><br><br>
+        </div>
+        <div>
+            <label for="apellidoMaterno">Apellido Materno:</label>
+            <input type="text" id="apellidoMaterno" name="apellidoMaterno" required placeholder="Apellido materno del cliente aqui"><br><br>
+        </div>
+        <div>
+            <label for="cedula">Numero de Cedula:</label>
+            <input type="text" id="cedula" name="cedula" required placeholder="Numero de Cedula del cliente" ><br><br>
+        </div>
+        <div>
+            <label for="motivo">Motivo de apertura de Cuenta:</label>
+            <textarea name="motivo" id="motivo" rows="4" cols="40" placeholder="Motivo de apertura de cuenta del cliente" required></textarea>
+        </div>
+        <div>
+            <label for="tipoCuenta">Tipo de Cuenta:</label>
+            <select name="tipoCuenta" id="tipoCuenta" required>
+                <option value="" disabled selected>Seleccione una Opcion</option>
+                <option value="Ahorros">Cuenta de Ahorros</option>
+                <option value="Corriente">Cuenta Corriente</option>
+            </select>
+        </div>
+        <fieldset>
+            <legend>Direccion de Domicilio</legend>
+            <label for="calle">Calle:</label>
+            <input type="text" id="calle" name="calle" required placeholder="Calle del Domicilio del cliente"><br><br>
+            <br><br>
+            <label for="numero">Numero:</label>
+            <input type="text" id="numero" name="numero" required placeholder="Numero del cliente aqui"><br><br>
+            <label for="interseccion">interseccion:</label>
+            <input type="text" name="interseccion" id="interseccion" required placeholder="Interseccion del cliente aqui"><br><br>
+        </fieldset>
+        <br>
+        <label for="foto">Cargar Foto:</label>
+        <input type="file" id="foto" name="foto" accept="image/*" ><br><br>
+        <button type="submit">Confirmar</button>
+        
+
+     </form>
 </body>
 </html>
